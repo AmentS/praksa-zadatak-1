@@ -1974,7 +1974,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       showModal: false,
       ime: '',
       prezime: '',
-      email: ''
+      email: '',
+      message: 'Please enter valid email address. Example: example@example.com'
     };
   },
   methods: {
@@ -2007,7 +2008,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 7:
                 _context.prev = 7;
                 _context.t0 = _context["catch"](0);
-                Swal.fire('Please enter valid email address. Example: example@example.com');
+                Swal.fire(_context.t0.message);
 
               case 10:
                 _context.prev = 10;

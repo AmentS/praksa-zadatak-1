@@ -21,7 +21,7 @@
                     Email:
                     <input type="text" class="input is-info" name="email" id="email" v-model="email"
                            placeholder="example@example.com">
-                    <label style="color: red" v-if="this.email == ''">Molimo popunite ovo polje</label>
+                   <label style="color: red" v-if="this.email == ''">Molimo popunite ovo polje</label>
                     <br>
 
                 </section>
@@ -45,7 +45,8 @@
                 showModal: false,
                 ime: '',
                 prezime: '',
-                email: ''
+                email: '',
+                message: 'Please enter valid email address. Example: example@example.com'
             };
         },
         methods: {
@@ -59,7 +60,7 @@
 
                     Swal.fire({icon: 'success', text: "Added user"});
                 } catch (e) {
-                    Swal.fire('Please enter valid email address. Example: example@example.com');
+                    Swal.fire(e.message);
                 } finally {
                     this.ime = '';
                     this.prezime = '';

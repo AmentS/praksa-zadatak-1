@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Subscriber;
 use Illuminate\Http\Request;
+use Newsletter;
 
 
 class SubscriberController extends Controller
@@ -20,6 +21,7 @@ class SubscriberController extends Controller
         ]);
 
         $subscription = new Subscriber(request(['first_name', 'last_name', 'email']));
+        Newsletter::subscribe('email');
         $subscription->save();
 
         return ['message' => 'User Added'];
