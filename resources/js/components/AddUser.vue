@@ -10,13 +10,19 @@
                 <section class="modal-card-body">
                     Ime:
                     <input type="text" class="input is-info" name="ime" id="ime" v-model="ime">
+                    <label style="color: red" v-if="this.ime == ''">Molimo popunite ovo polje</label>
+                    <br>
 
                     Prezime:
                     <input type="text" class="input is-info" name="prezime" id="prezime" v-model="prezime">
+                    <label style="color: red" v-if="this.prezime == ''">Molimo popunite ovo polje</label>
+                    <br>
 
                     Email:
                     <input type="text" class="input is-info" name="email" id="email" v-model="email"
                            placeholder="example@example.com">
+                    <label style="color: red" v-if="this.email == ''">Molimo popunite ovo polje</label>
+                    <br>
 
                 </section>
                 <footer class="modal-card-foot">

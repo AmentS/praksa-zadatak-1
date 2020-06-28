@@ -1962,6 +1962,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -21253,6 +21259,14 @@ var render = function() {
                 }
               }
             }),
+            _vm._v(" "),
+            this.ime == ""
+              ? _c("label", { staticStyle: { color: "red" } }, [
+                  _vm._v("Molimo popunite ovo polje")
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c("br"),
             _vm._v("\n\n                Prezime:\n                "),
             _c("input", {
               directives: [
@@ -21275,6 +21289,14 @@ var render = function() {
                 }
               }
             }),
+            _vm._v(" "),
+            this.prezime == ""
+              ? _c("label", { staticStyle: { color: "red" } }, [
+                  _vm._v("Molimo popunite ovo polje")
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c("br"),
             _vm._v("\n\n                Email:\n                "),
             _c("input", {
               directives: [
@@ -21301,7 +21323,15 @@ var render = function() {
                   _vm.email = $event.target.value
                 }
               }
-            })
+            }),
+            _vm._v(" "),
+            this.email == ""
+              ? _c("label", { staticStyle: { color: "red" } }, [
+                  _vm._v("Molimo popunite ovo polje")
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c("br")
           ]),
           _vm._v(" "),
           _c("footer", { staticClass: "modal-card-foot" }, [
