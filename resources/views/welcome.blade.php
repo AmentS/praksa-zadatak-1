@@ -8,12 +8,19 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="/css/app.css">
 
         <!-- Styles -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
     </head>
     <body>
 
-        <h1>Zdravo</h1>
+     <div id="app">
+                         <router-view></router-view>
+
+         </div>
+
+     <script src="/js/app.js"></script>
     </body>
 </html>
